@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Validar Formulário com JavaScript</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+            function validar_email() {
+                var email = formuser.email.value;
+                var rep_email = formuser.rep_email.value;
+
+                if (email != rep_email) {
+                    alert('email diferentes');
+                    formuser.email.focus();
+                    return false;
+                }
+            }
+            function validar() {
+                var senha = formuser.senha.value;
+                var rep_senha = formuser.rep_senha.value;
+
+                if (senha != rep_senha) {
+                    alert('Senhas diferentes');
+                    formuser.senha.focus();
+                    return false;
+                }
+            }
+        </script>
+
+	</head>
+	<body>
+		<h1>Cadastrar Usuário</h1>
+		<form name="formuser" action="#" method="POST">
+			Nome:<input type="text" name="nome" ><br><br>
+			E-mail:<input type="text" name="email" ><br><br>
+			Repetir E-mail:<input type="text" name="rep_email" ><br><br>
+			Senha:<input type="password" name="senha" ><br><br>
+			Repetir Senha:<input type="password" name="rep_senha" ><br><br>
+
+    <p>Sexo:
+        <INPUT TYPE="RADIO" NAME="sexo" required name=sexo VALUE="HOMEM"> Homem
+        <INPUT TYPE="RADIO" NAME="sexo" required name=sexo VALUE="MULHER">Mulher
+    </p>
+
+    <select>
+        Idade:
+        <option value="Idade15:">15 anos</option>
+        <option value="Idade16:">16 anos</option>
+        <option value="Idade17:">17 anos</option>
+        <option value="Idade18:">18 anos</option>
+        <option value="Idade19:">19 anos</option>
+        <option value="Idade20:">20 anos</option>
+        <option value="Idade21:">21 anos</option>
+        <option value="Idade22:">22 anos</option>
+        <option value="Idade23:">23 anos</option>
+        <option value="Idade24:">24 anos</option>
+        <option value="Idade25:">25 anos</option>
+        <option value="Idade26:">26 anos</option>
+        <option value="Idade27:">27 anos</option>
+        <option value="Idade28:">28 anos</option>
+        <option value="Idade29:">29 anos</option>
+        <option value="Idade30:">30 anos</option>
+    </select>
+<br>
+
+    <select>
+  <option value="Curso1">Sistemas de Informação</option>
+  <option value="Curso2">Ciência da Computação</option>
+  <option value="Curso3">Tecnologia e Análise e Desenvolvimento de Sistemas</option>
+      <option value="Curso4">Tecnologia em Banco de Dados</option>
+        <option value="Curso5">Tecnologia em Segurança</option>
+        <option value="Curso6">Tecnologia em Redes de Computadores</option>
+</select>
+    <br>
+  <p>
+			<input type="submit" onclick="validar_email();validar();">
+            <input type="reset" value="Limpar">
+		</form>
+	</body>
+</html>

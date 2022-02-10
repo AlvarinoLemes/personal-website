@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <title>Alvarino Lemes &mdash; Desenvolvimento</title>
+    
+ <script type="text/javascript" language="javascript">
+function validar_nome (){
+if(document.getElementById("nome").value == ""){
+alert('Por favor, preencha o campo nome');
+document.getElementById("nome").focus();
+return false
+}
+}
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-3" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Altronic<span class="text-primary">Tecnologia</span> </a></h1> <br>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+                
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                  
+                <li ><a href="index.html" data-aos="fade-down">Início</a></li>
+                <li><a href="projetos.html" data-aos="fade-down">Projetos</a></li> 
+                <li><a href="tutorias.html" data-aos="fade-down">Tutoriais</a></li> 
+                <li><a href="documentacoes.html" data-aos="fade-down">Documentações</a></li> 
+                <li class="active"> <a href="contato.html" data-aos="fade-down">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          
+         </div>
+        </div>
+<div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="site-section-heading ">
+              <h2>Contato</h2>
+            </div>
+          </div>
+        </div>
+
+ <div>
+    </div>
+		   <h2 class="text-primary" data-aos="fade-up">Telefones</h2>
+           <p class="tamanhoFonte" data-aos="fade-right">Whatsapp:(11)98318-8497</p>
+           <br>
+	<h2 class="text-primary" data-aos="fade-up">Envie uma mensagem</h2>
+	  <div data-aos="fade-right">
+    
+
+<form action="email.php" method="post">
+    Nome:<input  id="nome" type=text name="nome" size="40" placeholder="Nome Completo" required name=nome/>
+<br/>
+  <p>Sexo:
+<INPUT TYPE="RADIO" NAME="sexo" required name=sexo VALUE="HOMEM">Homem
+<INPUT TYPE="RADIO" NAME="sexo" required name=sexo VALUE="MULHER">Mulher 
+  </p>
+    <label for="email">E-mail:</label><input id="email" type=email size="40" name="email" placeholder="SeuEmail@email.com.br" required email=email/>
+    <br>
+<select>
+  <option value="Duvidas">Dúvidas</option>
+  <option value="Sugestao">Sugestão</option>
+  <option value="Outros">Outros</option>
+</select>
+<p>
+ 
+    <h2>Mensagem</h2>
+
+  <textarea name="mensagem" required name=mensagem  rows="10" cols="80"></textarea>
+  <br>
+
+  <br>
+    <input name="enviar" type="submit" onclick="validar_nome()" value="Enviar" />
+    <input type="reset" value="Limpar">
+    </div>
+ </div>
+    
+
+        
+      </div>
+    </div>
+    <footer class="border-top site-footer">
+      <div class="col-md-12 text-center">
+        <div class="pt-5">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | Alvarino Lemes</p>
+        </div>
+      </div>
+</footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+<body>
+<form id="form">
+    <!--form goes here-->
+    <input type="submit" value="Submit" />
+</form>
+<script src="http://smtpjs.com/smtp.js"></script>
+<script>
+    function sendMail(e){
+        event.preventDefault();
+        console.log('This will send the mail through SmtpJS');
+        Email.send("enviarformulariomoura@outlook.com",
+            "junior.moura19@hotmail.com",
+            "This is a subject",
+            "this is the body",
+            "smtp.live.com",
+            "enviarformulariomoura@outlook.com",
+            "Altronic010203");
+    }
+
+    function init(){
+        document.getElementById('form').onsubmit = sendMail;
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>
